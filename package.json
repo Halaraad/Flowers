@@ -1,0 +1,20 @@
+{
+  "name": "flowerstuff",
+  "version": "0.1.0",
+  "description": "Counts file lines and checks for a specific names.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halaraad/Flowers.git"
+  },
+  "author": "Hala Raad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Halaraad/Flowers/issues"
+  },
+  "homepage": "https://github.com/Halaraad/Flowers#readme"
+}
