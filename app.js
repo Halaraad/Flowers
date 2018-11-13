@@ -5,7 +5,7 @@ fs.readFile('flower.txt', (err, data)=> {
     if (err) return
     arr = data.toString().split('\n')
     arrLength = data.toString().split('\n').length
-    
+
 
     //1. Count the number of rows.
     console.log('\n1- The number of rows is :')
@@ -19,9 +19,8 @@ fs.readFile('flower.txt', (err, data)=> {
     for(var i=0; i<arrLength; i++) {
         holdElement = arr[i]
         if (holdElement.charAt(0) == 'S') {
-            firstWord = holdElement.split(" ", 1)
             startWithS [count] = []
-            startWithS [count] = firstWord
+            startWithS [count] = holdElement
             count++
         }
     }
@@ -42,9 +41,8 @@ fs.readFile('flower.txt', (err, data)=> {
     for(var i=0; i<arrLength; i++) {
         holdElement = arr[i]
         if (holdElement.charAt(0) == 'H') {
-            firstWord = holdElement.split(" ", 1)
             startWithH [count] = []
-            startWithH [count] = firstWord
+            startWithH [count] = holdElement
             count++
         }
     }
@@ -56,7 +54,7 @@ fs.readFile('flower.txt', (err, data)=> {
     count = 0
     var nameLength5 =[]
 
-    for(var i = 0; i < arrLength; ++i) {
+    for(var i=0; i<arrLength; ++i) {
         holdElement = arr[i]
         if(holdElement.length == 5) {
             nameLength5 [count] = []
