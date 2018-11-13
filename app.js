@@ -18,8 +18,8 @@ fs.readFile('flower.txt', (err, data)=> {
 
     for(var i=0; i<arrLength; i++) {
         holdElement = arr[i]
-        if (arr[i].charAt(0) == 'S') {
-            firstWord = arr[i].split(" ", 1)
+        if (holdElement.charAt(0) == 'S') {
+            firstWord = holdElement.split(" ", 1)
             startWithS [count] = []
             startWithS [count] = firstWord
             count++
